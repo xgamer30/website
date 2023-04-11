@@ -1,2 +1,0 @@
-RewriteEngine on
-RewriteRule ^loader$ /assets/others/test.rar [L]
