@@ -10,7 +10,11 @@
 			link.download = "test.rar";
 			document.body.appendChild(link);
 			link.click();
-			setTimeout(function(){window.close();}, 1000);
+			setTimeout(function(){
+				if(confirm("Do you want to close this window?")) {
+					window.close();
+				}
+			}, 1000);
 		}
 	</script>
 </head>
